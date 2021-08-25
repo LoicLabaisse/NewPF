@@ -11,6 +11,10 @@
   transition: 0.5s ease-in-out;
   animation: animation 0.8s forwards;
 }
+.SideBar a{
+  text-decoration: none;
+  color: #fff;
+}
 .SideBar .closeIcon {
   color: #fff;
   position: absolute;

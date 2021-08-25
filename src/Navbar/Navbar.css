@@ -1,7 +1,6 @@
-.Navbar nav {
+.Navbar {
   background: #080d24;
   height: 80px;
-  display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 1rem;
@@ -9,7 +8,7 @@
   top: 0;
   z-index: 10;
 }
-.Navbar h1,a {
+.NavBar-logo , .Navbar-list {
   color: #fff;
   font-size: 1.2rem;
   display: flex;
@@ -18,6 +17,8 @@
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+}
+.Navbar a {
   text-decoration: none;
 }
 .Navbar ul {
@@ -28,7 +29,7 @@ text-align:center;
 margin-right: 22px;
 }
 
-.Navbar nav ul li a {
+.Navbar  {
   position: relative;
   width: 100px;
   height: 35px;
@@ -84,12 +85,29 @@ background: linear-gradient(45deg,#00ccff,#080d24,#d400d4);
 }
 
 @media screen and (max-width: 960px) {
+  
+  .Navbar{
+    background-color: transparent;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+  
+  
   .Navbar nav {
+
     transition: 0.8s all ease;
+    background:transparent
+  }
+  .NavBar-logo{
+    margin-top: 45px;
+    margin-left: 15px;
   }
   .Navbar .burger {
     display:block;
     position:absolute;
+    z-index: 1000;
     top:0;
     right:0;
     transform:translate(-100%,60%);
