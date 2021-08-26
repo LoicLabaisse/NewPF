@@ -86,6 +86,165 @@
     1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
+/* Global Skills */
+.accueil-skills {
+  width: 98%;
+  border-radius: 5px;
+  margin: auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;  background-color: #212121;
+}
+.skills-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.underscore_title {
+  width: 30%;
+  background-color: #3755cc;
+  height: 5px;
+  border: none;
+  border-radius: 5px;
+}
+/*Skills Part 1 */
+.accueil-skills-content {
+  width: 100%;
+}
+.accueil-skills-content h3 {
+  margin-top: 65px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.accueil-skills-content ul {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 65px;
+}
+.accueil-skills-content ul li {
+  padding: 10px;
+}
+.accueil-skills-content ul h4 {
+  font-size: 1rem;
+}
+.accueil-skills-content ul p {
+  font-style: italic;
+}
+/* Skills Bar */
+.skill-list-two .bar:not(:last-child) {
+  margin-bottom: 15px;
+  
+}
+.bar {
+  width: 100%;
+  background-color: #444;
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 10px #2c2c2c, inset -5px -5px 10px #5c5c5c;
+  margin-top: 30px;
+}
+.bar-stat {
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-shadow: 0 0 5px #000;
+  color: #fff;
+}
+
+#html {
+  background: #3755cc;
+  animation: htmlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#css {
+  background: #3755cc;
+  animation: cssSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#js {
+  background: #3755cc;
+  animation: jsSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#react {
+  background: #3755cc;
+  animation: reactSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#angular {
+  background: #3755cc;
+  animation: angularSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#node {
+  background: #3755cc;
+  animation: nodeSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#c {
+  background: #3755cc;
+  animation: cSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+#sql {
+  background: #3755cc;
+  animation: sqlSlide 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@keyframes htmlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes cssSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+@keyframes jsSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes reactSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes angularSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes sqlSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes cSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+@keyframes nodeSlide {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 960px) {
