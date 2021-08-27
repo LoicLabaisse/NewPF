@@ -2,6 +2,7 @@ import React from 'react';
 import * as FaIcons from"react-icons/fa"
 import { Link } from 'react-router-dom';
 import './Navbar.css'
+import Logo from"../image/logo.png"
 
 
 
@@ -12,7 +13,7 @@ const Navbar =({toggle})=>{
 
         <div className="Navbar">
             <nav>
-                <Link to="/"><h1 className="NavBar-logo">Logo</h1></Link>
+                <Link to="/"><img className="NavBar-logo" src={Logo} alt="logo"/></Link>
                 <FaIcons.FaBars className="burger" onClick={toggle}/>
             <ul>
                 <li>

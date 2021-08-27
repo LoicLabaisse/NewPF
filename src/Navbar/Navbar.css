@@ -102,7 +102,8 @@ background: linear-gradient(45deg,#00ccff,#080d24,#d400d4);
   }
   .NavBar-logo{
     margin-top: 45px;
-    margin-left: 15px;
+    width: 100px;
+    padding: 0;
   }
   .Navbar .burger {
     display:block;

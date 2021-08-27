@@ -11,8 +11,11 @@ const Accueil = () => {
         <div className="accueil-navbar" id="accueil">
           <Home />
         </div>
+        <div className="accueil-title">
+        <h1>Labaisse Loïc</h1>
         <h3>Développeur Web Full Stack</h3>
         <h4>React | Angular | Node.js | Express | mySQL</h4>
+        </div>
         <a href="#skills">
           <div href="#skills" className="accueil-banner-button"></div>
         </a>
@@ -20,10 +23,10 @@ const Accueil = () => {
       <div id="skills" className="accueil-content">
         <div className="accueil-skills">
           <h2 className="skills-title">Mes Compétences</h2>
-          <hr className="underscore_title"/>
+          <hr className="underscore_title" />
           <div className="accueil-skills-content">
             <h3>Domaines de compétences</h3>
-            
+
             <ul className="skills-list-one">
               <li>
                 <h4>GESTION DE PROJETS WEB.</h4>
@@ -64,43 +67,41 @@ const Accueil = () => {
               </div>
             </div>
             <div className="bar">
-              <div className="bar-stat"id="js">
+              <div className="bar-stat" id="js">
                 <span className="bar-text">JAVASCRIPT (DOM) - 80%</span>
               </div>
             </div>
             <div className="bar">
-              <div className="bar-stat"id="react">
+              <div className="bar-stat" id="react">
                 <span className="bar-text">REACT | REDUX | HOOKS - 70%</span>
               </div>
             </div>
             <div className="bar">
-              <div className="bar-stat"id="angular">
+              <div className="bar-stat" id="angular">
                 <span className="bar-text"> ANGULAR - 60%</span>
               </div>
             </div>
             <div className="bar">
-              <div className="bar-stat"id="node">
+              <div className="bar-stat" id="node">
                 <span className="bar-text">NODE.JS | EXPRESS - 65%</span>
               </div>
             </div>
             <div className="bar">
-              <div className="bar-stat"id="sql">
+              <div className="bar-stat" id="sql">
                 <span className="bar-text">MYSQL - 60%</span>
               </div>
             </div>
             <div className="bar">
-              <div className="bar-stat"id="c">
+              <div className="bar-stat" id="c">
                 <span className="bar-text"> C# | UNITY - 30%</span>
               </div>
             </div>
           </div>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt
-          consequatur sequi exercitationem eaque in fugiat aut, eligendi,
-          cupiditate quas molestiae possimus impedit necessitatibus repudiandae
-          optio voluptatibus. Nobis, ipsa? Ut.
-        </p>
+        <div className="accueil-responsive">
+          <h2>Développement Web Responsive</h2>
+          <p> Mobile First une priorité !</p>
+        </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo deserunt
           consequatur sequi exercitationem eaque in fugiat aut, eligendi,
