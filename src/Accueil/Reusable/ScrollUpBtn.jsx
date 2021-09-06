@@ -6,7 +6,7 @@ const ScrollUpBtn = () => {
   const [scroll, setScroll] = useState(false);
 
   const buttonUp = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 500) {
       setScroll(true);
     } else {
       setScroll(false);

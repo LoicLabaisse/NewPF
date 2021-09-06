@@ -1,8 +1,8 @@
 
-.to-top {
+ .scrollUpBtn .to-top {
   display: none;
 }
-.active {
+.scrollUpBtn .active {
   background: #080d24;
   position: fixed;
   bottom: 16px;

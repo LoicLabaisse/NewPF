@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as FaIcons from"react-icons/fa"
 import { Link } from 'react-router-dom';
 import './Navbar.css'
@@ -9,24 +9,38 @@ import Logo from"../image/logo.png"
 
 const Navbar =({toggle})=>{
 
+    const [navbar, setNavbar] = useState(false);
+
+
+
+    const NavbarUp = () => {
+        if (window.scrollY >= 100) {
+          setNavbar(true);
+        } else {
+          setNavbar(false);
+        }
+      };
+
+
+      window.addEventListener("scroll", NavbarUp)
     return(
 
-        <div className="Navbar">
+        <div className={navbar ? "Navbar active" : "Navbar"}>
             <nav>
-                <Link to="/"><img className="NavBar-logo" src={Logo} alt="logo"/></Link>
+                <a href="/#accueil" id="accueil"><img className="NavBar-logo" src={Logo} alt="logo"/></a>
                 <FaIcons.FaBars className="burger" onClick={toggle}/>
             <ul>
                 <li>
                     <Link className="Navbar-list" to="/about"><span>A propos</span></Link>
                 </li>
                 <li>
-                    <Link  className="Navbar-list" to="/services"><span>Services</span></Link>
+                    <a  className="Navbar-list" href="/#project"><span>Projets</span></a>
                 </li>
                 <li>
-                    <Link  className="Navbar-list" to="/skills"><span>Compétences</span></Link>
+                    <a  className="Navbar-list" href="/#skills"><span>Compétences</span></a>
                 </li>
                 <li>
-                    <Link  className="Navbar-list" to="/contact"><span>Contactez-moi</span></Link>
+                    <a  className="Navbar-list" href="/#contact"><span>Contactez-moi</span></a>
                 </li>
             </ul>
             </nav>
