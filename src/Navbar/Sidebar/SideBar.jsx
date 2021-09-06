@@ -17,9 +17,9 @@ const SideBar = ({ toggle }) => {
             </Link>
           </li>
           <li>
-            <a onClick={toggle} href="/about">
+            <Link onClick={toggle} to="/about">
               <MdIcons.MdDescription /> A propos de moi
-            </a>
+            </Link>
           </li>
           <li>
             <a onClick={toggle} href="/#skills">
